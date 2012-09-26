@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+version = ARGV[0] || raise('pass version as first argument')
+
+package_content = File.read('./package.json')
+package_content.sub!(/"version": ".*?"/, %{"version": "#{version}"})
+
+File.open('./package.json', 'w'){|f| f.write package_content}
+
+raise "could not find version" unless package_content.include?(version)
+
+def execute(cmd)
+  raise unless system cmd
+end
+
+execute "git commit -am 'v#{version}'"
+execute "git tag v#{version}"
+execute "git push"
+execute "git push --tags"
+execute "npm publish ."
