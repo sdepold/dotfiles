@@ -1,0 +1,28 @@
+[user]
+	name = Sascha Depold
+	email = sascha@depold.com
+
+[alias]
+  co = checkout
+  st = status
+  br = branch
+  diffc = diff --cached
+  pls = "!git pull && git push"
+  unstage = reset HEAD --
+  amend = commit -a --amend
+  unconflic = "!ruby -e \"require '~/dotfiles/ruby/git_cmds'; git_perform_on_st('\\s+unmerged', 'git reset #F;git co #F')\""
+  rmmissing = "!ruby -e \"require '~/dotfiles/ruby/git_cmds'; git_perform_on_st('\\s+deleted', 'git rm #F')\""
+  l = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
+  cp = cherry-pick
+
+[apply]
+  whitespace = nowarn
+
+[core]
+  excludesfile = /Users/sdepold/.gitignore
+
+[push]
+  default = current
+  
+[http]
+	proxy =
