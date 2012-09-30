@@ -36,6 +36,7 @@ function _git_prompt() {
     if [[ "$git_status" =~ On\ branch\ ([^[:space:]]+) ]]; then
       branch=${BASH_REMATCH[1]}
       test "$branch" != master || branch=' '
+      test "$branch" == " " || branch=" $branch "
     else
       # Detached HEAD.  (branch=HEAD is a faster alternative.)
       branch="(`git describe --all --contains --abbrev=4 HEAD 2> /dev/null || echo HEAD`)"
