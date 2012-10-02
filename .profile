@@ -54,3 +54,7 @@ PROMPT_COMMAND=_prompt_command
 
 # load the git branch name autocompletion
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
+
+# add ssh key to ssh-agent
+ssh-add
+
