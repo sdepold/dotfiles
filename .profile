@@ -5,6 +5,7 @@ export HISTSIZE=100000
 export HISTCONTROL=ignoredups
 
 # load rvm
+PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # load nvm
@@ -15,6 +16,7 @@ export HISTCONTROL=ignoredups
 
 # extend the PATH
 PATH=$PATH:$HOME/.bin
+PATH=/usr/local/bin:$PATH
 
 # aliases
 alias devlog='tail -f log/development.log'
@@ -49,6 +51,3 @@ function _prompt_command() {
     PS1="`_git_prompt`"'\[\e[1;34m\]\w ∴\[\e[0m\] '
 }
 PROMPT_COMMAND=_prompt_command
-
-
-[[ -s "$HOME/Dropbox/System/Bash/profile" ]] && source "$HOME/Dropbox/System/Bash/profile"
