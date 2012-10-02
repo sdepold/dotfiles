@@ -51,3 +51,6 @@ function _prompt_command() {
     PS1="`_git_prompt`"'\[\e[1;34m\]\w ∴\[\e[0m\] '
 }
 PROMPT_COMMAND=_prompt_command
+
+# load the git branch name autocompletion
+source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
