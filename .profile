@@ -30,7 +30,7 @@ function _git_prompt() {
     if [[ "$git_status" =~ nothing\ to\ commit ]]; then
       local ansi=46
     elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
-      local ansi=43
+      local ansi=45
     else
       local ansi=44
     fi
