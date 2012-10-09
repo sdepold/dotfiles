@@ -52,6 +52,9 @@ function _prompt_command() {
 }
 PROMPT_COMMAND=_prompt_command
 
+# git: auto merge pull request
+export GIT_MERGE_AUTOEDIT=no
+
 # load the git branch name autocompletion
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 
