@@ -22,6 +22,7 @@ PATH=/usr/local/bin:$PATH
 alias devlog='tail -f log/development.log'
 alias testlog='tail -f log/test.log'
 alias ttr="touch tmp/restart.txt"
+alias gitlog='for k in `git branch | perl -pe s/^..//`; do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k -- | head -n 1`\\t$k; done | sort -r'
 
 # colors
 function _git_prompt() {
