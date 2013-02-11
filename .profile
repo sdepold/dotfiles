@@ -18,6 +18,10 @@ PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.bin
 PATH=/usr/local/bin:$PATH
 
+if [ -d "/usr/local/share" ]; then
+  PATH=/usr/local/share:$PATH
+fi
+
 # aliases
 alias devlog='tail -f log/development.log'
 alias testlog='tail -f log/test.log'
