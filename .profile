@@ -18,8 +18,9 @@ PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.bin
 PATH=/usr/local/bin:$PATH
 
-if [ -d "/usr/local/share" ]; then
-  PATH=/usr/local/share:$PATH
+# load python if available
+if [ -d "/usr/local/share/python" ]; then
+  PATH=/usr/local/share/python:$PATH
 fi
 
 # aliases
