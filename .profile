@@ -4,10 +4,6 @@ export HISTFILESIZE=100000
 export HISTSIZE=100000
 export HISTCONTROL=ignoredups
 
-# load rvm
-PATH=$PATH:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # load nvm
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
