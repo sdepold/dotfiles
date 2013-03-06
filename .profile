@@ -68,3 +68,4 @@ source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 # add ssh key to ssh-agent
 ssh-add
 
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
