@@ -4,15 +4,15 @@ export HISTFILESIZE=100000
 export HISTSIZE=100000
 export HISTCONTROL=ignoredups
 
-# load nvm
-[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
-
 # load bundler exec
 [ -f "$HOME/.bundler-exec.sh" ] && source "$HOME/.bundler-exec.sh"
 
 # extend the PATH
 PATH=$PATH:$HOME/.bin
 PATH=/usr/local/bin:$PATH
+
+# load nvm
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
 # load python if available
 if [ -d "/usr/local/share/python" ]; then
