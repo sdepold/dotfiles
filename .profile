@@ -65,3 +65,4 @@ source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 ssh-add
 
 export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
+eval "$(rbenv init -)"
