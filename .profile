@@ -11,6 +11,9 @@ export HISTCONTROL=ignoredups
 PATH=$PATH:$HOME/.bin
 PATH=/usr/local/bin:$PATH
 
+# lovely java
+export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+
 # load nvm
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
