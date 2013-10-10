@@ -15,6 +15,7 @@
   l = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
   cp = cherry-pick
   uncommit = reset --soft HEAD^
+  incl = branch --contains
 
 [apply]
   whitespace = nowarn
