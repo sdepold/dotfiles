@@ -17,11 +17,6 @@ export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 # load nvm
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 
-# load python if available
-if [ -d "/usr/local/share/python" ]; then
-  PATH=/usr/local/share/python:$PATH
-fi
-
 # aliases
 alias devlog='tail -f log/development.log'
 alias testlog='tail -f log/test.log'
