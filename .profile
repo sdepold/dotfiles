@@ -10,6 +10,7 @@ export HISTCONTROL=ignoredups
 # extend the PATH
 PATH=$PATH:$HOME/.bin
 PATH=/usr/local/bin:$PATH
+PATH=/opt/homebrew-cask/Caskroom/sublime-text3/3047/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 
 # lovely java
 export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
