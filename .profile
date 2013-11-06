@@ -3,6 +3,7 @@ shopt -s histappend
 export HISTFILESIZE=100000
 export HISTSIZE=100000
 export HISTCONTROL=ignoredups
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 # load bundler exec
 [ -f "$HOME/.bundler-exec.sh" ] && source "$HOME/.bundler-exec.sh"
