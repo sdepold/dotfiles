@@ -3,7 +3,8 @@ shopt -s histappend
 export HISTFILESIZE=100000
 export HISTSIZE=100000
 export HISTCONTROL=ignoredups
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+# cert.pem file for openssl
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
 # load bundler exec
 [ -f "$HOME/.bundler-exec.sh" ] && source "$HOME/.bundler-exec.sh"
@@ -24,7 +25,7 @@ alias devlog='tail -f log/development.log'
 alias testlog='tail -f log/test.log'
 alias ttr="touch tmp/restart.txt"
 alias gitlog='for k in `git branch | perl -pe s/^..//`; do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k -- | head -n 1`\\t$k; done | sort -r'
-alias setup_branch="rake db:reset && rake db:migrate && rake test:prepare"
+alias setup_branch="rake db:reset db:migrate test:prepare"
 
 # colors
 function _git_prompt() {
