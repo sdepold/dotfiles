@@ -6,10 +6,8 @@
 		co = checkout
 		st = status
 		br = branch
-		diffc = diff --cached
 		pls = "!git pull && git push"
 		unstage = reset HEAD --
-		amend = commit -a --amend
 		l = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
 		cp = cherry-pick
 		uncommit = reset --soft HEAD^
