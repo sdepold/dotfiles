@@ -24,3 +24,6 @@
 
 [http]
 	proxy =
+
+[init]
+  templatedir = /Users/sdepold/.dotfiles/.tiny_scripts/git-hooks
