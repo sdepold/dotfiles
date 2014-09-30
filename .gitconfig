@@ -3,27 +3,24 @@
 	email = sascha@depold.com
 
 [alias]
-		co = checkout
-		st = status
-		br = branch
-		pls = "!git pull && git push"
-		unstage = reset HEAD --
-		l = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
-		cp = cherry-pick
-		uncommit = reset --soft HEAD^
-		incl = branch --contains
+	co = checkout
+	st = status
+	br = branch
+	pls = "!git pull && git push"
+	unstage = reset HEAD --
+	l = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
+	cp = cherry-pick
+	uncommit = reset --soft HEAD^
+	incl = branch --contains
 
 [apply]
-		whitespace = nowarn
+	whitespace = nowarn
 
 [core]
-		excludesfile = /Users/sdepold/.gitignore
+	excludesfile = /Users/sdepold/.gitignore
 
 [push]
 	default = tracking
 
 [http]
 	proxy =
-
-[init]
-  templatedir = /Users/sdepold/.dotfiles/.tiny_scripts/git-hooks
